@@ -1,0 +1,75 @@
+/* Since choosing colours is a whole game in and of itself, let's centralize the colour selectors.*/
+:root {
+    /* Site Background*/
+    --color1: #EBE3D5;
+
+    /* Header Background*/
+    --color2: #F3EEEA;
+
+    /* Nav Bar link hover color*/
+    --color3: #B0A695;
+
+    /* Nav bar passive background color*/
+    --color4: #776B5D;
+
+    /* Main content card background color*/
+    --color5: #F3EEEA;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Cambria;
+    padding: 10px;
+    background: var(--color1);
+}
+
+header {
+    font-family: Cambria;
+    padding: 20px;
+    text-align: center;
+    background: var(--color2);
+    font-size: 20px;
+}
+
+/* Styling nav bar */
+nav ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: var(--color4);
+}
+
+/* Nav bar links */
+nav li a {
+    float: left;
+    display: block;
+    color: #f2f2f2;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+
+/* Nav bar change colour on hover */
+nav a:hover{
+    background-color: var(--color3);
+    color: white;
+}
+
+/* Add a card effect for articles */
+.card {
+    background-color: var(--color5);
+    padding: 20px;
+    margin-top: 20px;
+  }
+
+/* Footer */
+footer {
+    padding: 20px;
+    text-align: center;
+    background: var(--color2);
+    margin-top: 20px;
+  }
